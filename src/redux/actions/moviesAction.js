@@ -15,25 +15,7 @@ if(process.env.NODE_ENV !== 'production'){
   api_key = process.env.API_KEY
 }
 
-// // get all movies
-// export const setMovies = (text) => async(dispatch) =>{
-//     try {
-//         setLoading()  
-//         const res = await fetch(
-//           `http://www.omdbapi.com/?s=${text}&apikey=${api_key}`
-//         );
-//         const data = await res.json()
-//         dispatch({
-//             type: GET_MOVIES,
-//             payload: data
-//         }) 
-//     } catch (err) {
-//         dispatch({
-//           type: SET_ERROR,
-//           payload: err.message
-//         });
-//     }
-// }
+
 // search movies
 export const searchMovie = (text) => async(dispatch) =>{
     try {
